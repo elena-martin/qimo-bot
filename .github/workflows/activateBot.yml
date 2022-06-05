@@ -1,0 +1,9 @@
+on: push
+jobs:
+  run-Bot:
+    name: Run Bot
+    runs-on: ubuntu-latest
+    needs: load-Bot;
+    steps:
+     - name: Running Bot
+       run: node index.js
