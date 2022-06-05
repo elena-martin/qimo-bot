@@ -1,5 +1,8 @@
 {
   "name": "qimo-bot",
   "version": "1.0.0",
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "tmi.js": "^1.8.5"
+  }
 }
