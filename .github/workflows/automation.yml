@@ -2,7 +2,7 @@ on: push
 jobs:
   first-job:
     runs-on: ubuntu-latest
-    container: node:16.13.2
+    container: node:16.14.0
     steps:
      - run: node --version
      - run: npm --version
