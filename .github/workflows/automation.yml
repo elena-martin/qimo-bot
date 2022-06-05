@@ -16,6 +16,6 @@ jobs:
     needs: load-Bot
     runs-on: ubuntu-latest
     steps:
-      - name: Run Bot
-      run: node index.js
+     - name: Run Bot
+       run: node index.js
      
