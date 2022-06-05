@@ -1,18 +1,17 @@
 on: push
 jobs:
   load-Bot:
-    name: Loading Bot
+    name: Activate Bot
     runs-on: ubuntu-latest
     container: node:16.14.0
     steps:
-     - run: node --version
-     - run: npm --version
+     - name: Check Node Version
+       run: node --version
+     - name: Check NPM Version
+       run: npm --version
      - uses: actions/checkout@v3
-     - run: npm install
-  run-Bot:
-    name: Running Bot
-    runs-on: ubuntu-latest
-    container: node:16.14.0
-    steps:
-     - run: node index.js
+     - name: Install NPM
+       run: npm install
+     - name: Running Bot
+       run: node index.js
      
