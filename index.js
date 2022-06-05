@@ -177,7 +177,3 @@ client.on('message',(channel, userstate, message, self)=>{
 });
 
 client.connect();
-
-function success(){
-    window.alert("success!")
-};
