@@ -1,0 +1,12 @@
+on:
+workflow_run:
+  workflows:["Load Bot"]
+  types:
+    - completed
+jobs:
+  run-Bot:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: Run Bot
+       run: node index.js
