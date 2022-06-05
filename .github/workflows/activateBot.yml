@@ -1,5 +1,5 @@
 name: Run Bot
-on: [push]
+on: push
 jobs:
   run-Bot:
     name: Activate the Bot
@@ -7,4 +7,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Running Bot
-       run: node index.js
+      run: node index.js
