@@ -1,5 +1,10 @@
 {
   "name": "qimo-bot",
   "version": "1.0.0",
-  "main": "index.js"
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jsonpath": "^1.1.1",
+    "tmi.js": "^1.8.5"
+  }
 }
