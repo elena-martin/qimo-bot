@@ -1,9 +1,5 @@
+name: Run Bot
 on:
-  workflow_run:
-    workflows:["Load Bot"]
-    types:
-      - completed
-    
 jobs:
   run-Bot:
     runs-on: ubuntu-latest
