@@ -1,7 +1,7 @@
 on: push
 jobs:
   load-Bot:
-    name: Activate Bot
+    name: Load Bot
     runs-on: ubuntu-latest
     container: node:16.14.0
     steps:
@@ -14,7 +14,7 @@ jobs:
        run: npm install
   
   run-Bot:
-    name: Activate Bot
+    name: Run Bot
     runs-on: ubuntu-latest
     needs: load-Bot;
     steps:

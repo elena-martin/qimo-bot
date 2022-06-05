@@ -1,7 +1,0 @@
-on:
-jobs:
-  run-Bot:
-    runs-on: ubuntu-latest
-    container: node:16.14.0
-    - name: Running Bot
-       run: node index.js
