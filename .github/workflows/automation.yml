@@ -1,6 +1,7 @@
 on: push
 jobs:
   load-Bot:
+    title: Loading Bot
     runs-on: ubuntu-latest
     container: node:16.14.0
     steps:
@@ -8,8 +9,8 @@ jobs:
      - run: npm --version
      - uses: actions/checkout@v3
      - run: npm install
-     - run: node index.js
   run-Bot:
+    title: Running Bot
     runs-on: ubuntu-latest
     container: node:16.14.0
     steps:
