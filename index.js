@@ -1,8 +1,8 @@
 //THIS FILE REQUIRES NODE & NPM - USE THE INCLUDED INSTALLER (node-v16.14.0-x64.msi).
 
 // Code will not run if files are missing
-var tmi = require('./node_modules/tmi');
-const { username } = require('./node_modules/tmi/lib/utils');
+var tmi = require('./node_modules/tmi.js');
+const { username } = require('./node_modules/tmi.js/lib/utils');
 const jp = require('jsonpath');
 
 var data = require('./database.json');
