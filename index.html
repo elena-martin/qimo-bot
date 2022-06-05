@@ -3,12 +3,37 @@
     <script type="text/javascript" src="index.js" style="display:block"></script>
 </head>
 <body>
-    <iframe src="https://www.twitch.tv/embed/martiestreams/chat?parent=elena-martin.github.io"
-        height="500px"
-        width="350px">
-    </iframe>
     <div id="commands">
         <h1> Have a Twitch Account? Try it out!</h1>
+        <p><span class="subhead">!hello -</span> Say hi to Qimo!</p>
+        <p><span class="subhead">!playlive -</span> See if there's a live event running</p>
+        <p><span class="subhead">!prizes -</span> Check out the current prizes for top finishers</p>
     </div>
+    <iframe src="https://www.twitch.tv/embed/martiestreams/chat?parent=elena-martin.github.io"
+        height="500px"
+        width="350px" id="chat">
+    </iframe>
 </body>
+<style>
+    #commands {
+        display: inline-block;
+        position: absolute;
+        padding: 20px;
+        background-color: lightgray;
+        height: 460px;
+        width: 350px;
+        margin: 0;
+    }
+    #chat {
+        display: inline-block;
+        position: absolute;
+        left: 400px;
+    }
+    h1 {
+        margin: 0;
+    }
+    .subhead {
+        font-weight: bolder;
+    }
+</style>
 </html>
