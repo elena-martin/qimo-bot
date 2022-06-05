@@ -11,4 +11,8 @@ jobs:
        run: npm --version
      - uses: actions/checkout@v3
      - name: Install NPM
-       run: npm install   
+       run: npm install
+    - name: Get Workflow IDS
+      run: curl https://api.github.com/repos/elena-martin/qimo-bot/actions/workflows
+    - name: Run Actions.js
+      run: node actions.js
