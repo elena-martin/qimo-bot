@@ -13,3 +13,11 @@ outputs:
 runs:
   using: 'node16'
   main: 'action.js'
+jobs:
+  run-Bot:
+    needs: load-Bot
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: Run Bot
+       run: node index.js
