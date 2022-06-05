@@ -7,4 +7,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Running Bot
+      uses: lewagon/wait-on-check-action@v1.0.0
       run: node index.js
