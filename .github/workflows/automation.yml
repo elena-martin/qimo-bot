@@ -1,7 +1,7 @@
 name: Load Bot
 on: push
 jobs:
-  first-job:
+  load-Bot:
     runs-on: ubuntu-latest
     container: node:16.14.0
     steps:
@@ -14,4 +14,13 @@ jobs:
        run: npm install
      - name: Get Workflow IDS
        run: curl https://api.github.com/repos/elena-martin/qimo-bot/actions/workflows
+  run-Bot:
+    needs: load-Bot
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: Run Actions.js
+       run: node actions.js
+     - name: Run Bot
+       run: node index.js
      
