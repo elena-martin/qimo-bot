@@ -5,11 +5,14 @@
 <body>
     <div id="commands">
         <h1> Have a Twitch Account? Try it out!</h1>
+        <h3>Standard Commands</h3>
         <p><span class="subhead">!hello -</span> Say hi to Qimo!</p>
         <p><span class="subhead">!playlive -</span> See if there's a live event running</p>
         <p><span class="subhead">!prizes -</span> Check out the current prizes for top finishers</p>
-        <p><span class="subhead">!testLoad -</span> Launch 4 timed announcments that imitate the initial start-up sequence of a live game</p>
-        <p><span class="subhead">!testGame -</span> Launch 2 timed announcments that imitate the ending sequence of a live game</p>
+        <p><span class="subhead">!sponsor -</span> See who's sponsoring the current game</p>
+        <h3>Automatic Commands (Testing)</h3>
+        <p><span class="subhead">!testLoad -</span> Launch 4 timed announcements that imitate the initial start-up sequence of a live game</p>
+        <p><span class="subhead">!testGame -</span> Launch 2 timed announcements that imitate the ending sequence of a live game</p>
     </div>
     <iframe src="https://www.twitch.tv/embed/martiestreams/chat?parent=elena-martin.github.io"
         height="500px"
@@ -23,19 +26,29 @@
         padding: 20px;
         background-color: lightgray;
         height: 460px;
-        width: 350px;
+        width: 380px;
         margin: 0;
     }
     #chat {
         display: inline-block;
         position: absolute;
-        left: 400px;
+        left: 430px;
     }
     h1 {
         margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h3:nth-of-type(2) {
+        margin-top: 25px;
     }
     .subhead {
         font-weight: bolder;
+    }
+    p {
+        font-family: Arial, Helvetica, sans-serif;
     }
 </style>
 </html>
