@@ -1,8 +1,8 @@
 on:
-workflow_run:
-  workflows:["Load Bot"]
-  types:
-    - completed
+  workflow_run:
+    workflows:["Load Bot"]
+    types:
+      - completed
     
 jobs:
   run-Bot:
