@@ -1,5 +1,5 @@
 name: Load Bot
-on: [push]
+on: push
 jobs:
   load-Bot:
     runs-on: ubuntu-latest

@@ -1,5 +1,5 @@
 name: Run Bot
-on:
+on: push
 jobs:
   run-Bot:
     runs-on: ubuntu-latest
