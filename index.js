@@ -4,7 +4,6 @@
 var tmi = require('./node_modules/tmi.js');
 const { username } = require('./node_modules/tmi.js/lib/utils');
 const jp = require('jsonpath');
-const core = require('@actions/core');
 
 var data = require('./database.json');
 const { param } = require('jquery');

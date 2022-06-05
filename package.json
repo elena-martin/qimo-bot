@@ -4,6 +4,7 @@
   "main": "index.js",
   "dependencies": {
     "@actions/core": "^1.8.2",
+    "@octokit/core": "^3.6.0",
     "jquery": "^3.6.0",
     "jsonpath": "^1.1.1",
     "tmi.js": "^1.8.5"
