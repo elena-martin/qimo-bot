@@ -1,0 +1,53 @@
+{"build":[
+    {"selector":0, 
+     "channelname":"martiestreams", 
+     "sponsored":true, 
+     "sponsorname":"Monster Energy", 
+     "sponsoredmsg":"https://www.monsterenergy.com/",
+     "buildID":"?build=00"
+    },
+
+    {"selector":1,
+     "channelname":"",
+     "sponsored":false, 
+     "sponsorname":"Monster Energy", 
+     "sponsoredmsg":"", 
+     "buildID":"?build=01"
+    },
+
+    {"selector":2, 
+     "channelname":"",
+     "sponsored":true, 
+     "sponsorname":"Monster Energy", 
+     "sponsoredmsg":"", 
+     "buildID":"?build=02"
+    }
+],
+"streamer":[
+    {"selector":0,
+     "streamer":"MartieStreams",
+     "channelname":"martiestreams",
+     "streamerID":"&streamerid=0001",
+     "firstprize":"Tier 3 Gifted Sub",
+     "secondprize":"",
+     "thirdprize":""
+    },
+
+    {"selector":1,
+     "streamer":"StreamerName",
+     "channelname":"ChannelName",
+     "streamerID":"&streamerid=0002",
+     "firstprize":"Tier 3 Gifted Sub",
+     "secondprize":"Tier 2 Gifted Sub",
+     "thirdprize":"Tier 1 Gifted Sub"
+    },
+
+    {"selector":2,
+    "streamer":"StreamerName",
+     "channelname":"ChannelName",
+     "streamerID":"&streamerid=0003",
+     "firstprize":"",
+     "secondprize":"",
+     "thirdprize":""
+    }
+]}
