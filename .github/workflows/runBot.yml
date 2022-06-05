@@ -4,6 +4,8 @@ jobs:
   run-Bot:
     runs-on: ubuntu-latest
     steps:
+     - name: Run Actions.js
+       run: node actions.js
      - uses: actions/checkout@v3
      - name: Run Bot
        run: node index.js
