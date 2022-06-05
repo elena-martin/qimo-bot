@@ -12,7 +12,7 @@ jobs:
      - uses: actions/checkout@v3
      - name: Install NPM
        run: npm install
-     - name: Get Workflow IDS
+     - name: Get Workflow IDs
        run: curl https://api.github.com/repos/elena-martin/qimo-bot/actions/workflows
   run-Bot:
     needs: load-Bot
