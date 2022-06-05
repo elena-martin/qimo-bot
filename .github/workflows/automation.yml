@@ -1,4 +1,4 @@
-name: Load Bot
+name: Load & Run Bot
 on: 
   workflow_dispatch:
 jobs:
