@@ -66,7 +66,7 @@ var mostrecentgame = "" //Game start timestamp (MM/DD/YYYY HH:MM)
 client.on('message',(channel, userstate, message, self)=>{
     //GAME FUNCTIONS - PlayLive events trigger these
     function gameLoad() {
-        client.say(channel, `Time to play! Scan the QR on stream, or tap this link on your phone to join in: ${liveURL}`)
+        client.say(channel, `/announce Time to play! Scan the QR on stream, or tap this link on your phone to join in: ${liveURL}`)
     };
 
     function loadMin() {
@@ -74,14 +74,14 @@ client.on('message',(channel, userstate, message, self)=>{
     };
 
     function loadThirty() {
-        client.say(channel, `Thirty seconds left to load in! Scan the QR on stream, or tap this link on your phone to join the game: ${liveURL}`)
+        client.say(channel, `/announce Thirty seconds left to load in! Scan the QR on stream, or tap this link on your phone to join the game: ${liveURL}`)
     };
     function loadTen() {
         client.say(channel, `Ten seconds left to load in! Scan the QR on stream, or tap this link on your phone to join the game: ${liveURL}`)
     };
 
     function gameLaunch() {
-        client.say(channel, `The game starts NOW! Good luck, everyone!`)
+        client.say(channel, `/announce The game starts NOW! Good luck, everyone!`)
     };
 
     function countdownThirty() {
