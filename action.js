@@ -1,3 +1,4 @@
+const core = require('@actions/core');
 const axios = require('axios');
 
 const [,,command,workflowType] = process.argv;
@@ -38,7 +39,7 @@ async function run(command) {
         default:
             throw new Error('Command not supported');
     }
-    
+
     if(!owner || !repo || !token) {
         throw new Error('Owner and repo required');
     }
