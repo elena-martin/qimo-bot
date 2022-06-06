@@ -246,3 +246,5 @@ run(command)
     console.log(e.message);
     process.exit(1);
 })
+
+/*Auth Token: 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*/
