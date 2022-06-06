@@ -6,11 +6,10 @@ env:
 on:
   repository_dispatch:
     types: [run-ping]
-
 jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Run Bot
-        run: node index.js
+        run: npm run ping
