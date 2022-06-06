@@ -1,0 +1,16 @@
+name: Ping
+env:
+  REPO_OWNER: elena-martin
+  REPO_NAME: qimo-bot
+  GITHUB_TOKEN: ${{ secrets.TOKEN }}
+on:
+  repository_dispatch:
+    types: [run-ping]
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Tests
+        run: npm run ping

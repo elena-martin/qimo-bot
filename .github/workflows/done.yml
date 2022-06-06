@@ -1,0 +1,15 @@
+name: Done
+env:
+  REPO_OWNER: elena-martin
+  REPO_NAME: qimo-bot
+  GITHUB_TOKEN: ${{ secrets.TOKEN }}
+on:
+  repository_dispatch:
+    types: [run-done]
+jobs:
+  done:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Done
+        run: npm run done
