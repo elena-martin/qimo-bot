@@ -230,7 +230,7 @@ async function run(command) {
     
     const dispatchUrl = `https://api.github.com/repos/${owner}/${repo}/dispatches`;
     
-    console.log(`Dispatching ${dispatchUrl} with paylaod`, payload);
+    console.log(`Dispatching ${dispatchUrl} with payload`, payload);
     const res = await axios.post(dispatchUrl, payload, {
         headers: {
             Authorization: `Bearer ${token}`,
