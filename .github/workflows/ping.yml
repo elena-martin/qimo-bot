@@ -12,6 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm ci
-      - name: Run Tests
-        run: npm run ping
+      - name: Run Bot
+        run: node index.js
