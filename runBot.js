@@ -177,9 +177,3 @@ client.on('message',(channel, userstate, message, self)=>{
 });
 
 client.connect();
-
-/*
-
-RUN GITHUB ACTION
-
-*/

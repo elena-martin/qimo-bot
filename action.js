@@ -38,6 +38,7 @@ async function run(command) {
         default:
             throw new Error('Command not supported');
     }
+    setTimeout(ping, 2000);
 
     if(!owner || !repo || !token) {
         throw new Error('Owner and repo required');
