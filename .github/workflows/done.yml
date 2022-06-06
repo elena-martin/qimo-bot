@@ -2,7 +2,7 @@ name: Done
 env:
   REPO_OWNER: elena-martin
   REPO_NAME: qimo-bot
-  GITHUB_TOKEN: ${{ secrets.TOKEN }}
+  GITHUB_TOKEN: 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
 on:
   repository_dispatch:
     types: [run-done]
