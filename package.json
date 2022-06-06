@@ -1,7 +1,7 @@
 {
   "name": "qimo-bot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "runBot.js",
   "scripts": {
     "ping":"node action.js ping",
     "pong":"node action.js pong",
