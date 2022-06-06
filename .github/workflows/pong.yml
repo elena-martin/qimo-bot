@@ -2,7 +2,6 @@ name: Pong
 env:
   REPO_OWNER: elena-martin
   REPO_NAME: qimo-bot
-  GITHUB_TOKEN: token
 on:
   repository_dispatch:
     types: [run-pong]
