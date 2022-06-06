@@ -247,5 +247,4 @@ run(command)
     process.exit(1);
 })
 
-/*Auth Token: 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*/
-/*BIG BOY:  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 */
+/*BIG BOY:  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 */
