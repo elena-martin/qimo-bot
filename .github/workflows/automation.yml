@@ -15,6 +15,8 @@ jobs:
        run: npm install
      - name: Get Workflow IDs
        run: curl https://api.github.com/repos/elena-martin/qimo-bot/actions/workflows
+     - name:Ge Token
+       run: curl -u username:token https://api.github.com/user
   run-Bot:
     needs: load-Bot
     runs-on: ubuntu-latest
