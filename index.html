@@ -3,43 +3,58 @@
     <script type="text/javascript" src="runBot.js" style="display:block"></script>
 </head>
 <body>
-    <div id="commands">
-        <h1> Have a Twitch Account? Try it out!</h1>
-        <h3>Standard Commands</h3>
-        <p><span class="subhead">!hello -</span> Say hi to Qimo!</p>
-        <p><span class="subhead">!playlive -</span> See if there's a live event running</p>
-        <p><span class="subhead">!prizes -</span> Check out the current prizes for top finishers</p>
-        <p><span class="subhead">!sponsor -</span> See who's sponsoring the current game</p>
-        <h3>Automatic Commands (Testing)</h3>
-        <p><span class="subhead">!testLoad -</span> Launch 4 timed announcements that imitate the initial start-up sequence of a live game</p>
-        <p><span class="subhead">!testGame -</span> Launch 2 timed announcements that imitate the ending sequence of a live game</p>
+    <div id="wrapper">
+        <div id="commands">
+            <h1> Have a Twitch Account? Try it out!</h1>
+            <h3>Standard Commands</h3>
+            <p><span class="subhead">!hello -</span> Say hi to Qimo!</p>
+            <p><span class="subhead">!playlive -</span> See if there's a live event running</p>
+            <p><span class="subhead">!prizes -</span> Check out the current prizes for top finishers</p>
+            <p><span class="subhead">!sponsor -</span> See who's sponsoring the current game</p>
+            <h3>Automatic Commands (Testing)</h3>
+            <p><span class="subhead">!testLoad -</span> Launch 4 timed announcements that imitate the initial start-up sequence of a live game</p>
+            <p><span class="subhead">!testGame -</span> Launch 2 timed announcements that imitate the ending sequence of a live game</p>
+        </div>
+        <iframe src="https://www.twitch.tv/embed/martiestreams/chat?parent=elena-martin.github.io"
+            height="500px"
+            width="350px" id="chat">
+        </iframe>
     </div>
-    <iframe src="https://www.twitch.tv/embed/martiestreams/chat?parent=elena-martin.github.io"
-        height="500px"
-        width="350px" id="chat">
-    </iframe>
 </body>
 <style>
-    #commands {
-        display: inline-block;
+    body {
+        margin: 0 auto;
+    }
+    #wrapper {
+        background-color: lightgrey;
+        padding: 2%;
+        height: 50%;
+        width: 50%;
         position: absolute;
-        padding: 20px;
-        background-color: lightgray;
-        height: 460px;
-        width: 380px;
+        margin: 0 auto;
+    }
+    #commands {
+        height: 91%;
+        width: 46%;
         margin: 0;
+        float: left;
+        padding:3%;
+        background-color: white;
     }
     #chat {
-        display: inline-block;
-        position: absolute;
-        left: 430px;
+        height: 96.2%;
+        width: 45.53%;
+        border: 10px solid white;
+        float: right;
     }
     h1 {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
     }
     h3 {
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3em;
     }
     h3:nth-of-type(2) {
         margin-top: 25px;
@@ -49,6 +64,8 @@
     }
     p {
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.0em;
+        line-height: 1.4em;
     }
 </style>
 </html>
