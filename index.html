@@ -16,10 +16,12 @@
             <p><span class="subhead">!testLoad -</span> Launch 4 timed announcements that imitate the initial start-up sequence of a live game</p>
             <p><span class="subhead">!testGame -</span> Launch 2 timed announcements that imitate the ending sequence of a live game</p>
         </div>
-        <div id="chat"></div>
-        <iframe src="https://www.twitch.tv/embed/martiestreams/chat?parent=elena-martin.github.io/qimo-bot/"
+        <iframe id ="chat"
+            src="https://www.twitch.tv/embed/martiestreamsembed/chat?parent=elena-martin.github.io/qimo-bot/"
             height="500px"
-            width="350px">
+            width="350px"
+            sandbox="allow-scripts"
+            sandbox="allow-same-origin">
         </iframe>
     </div>
 
@@ -49,7 +51,7 @@
     #chat {
         height: 100%;
         border: none;
-        width: 48%;
+        width: 45%;
         display: inline-block;
     }
     @font-face {
